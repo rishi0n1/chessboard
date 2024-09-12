@@ -26,9 +26,30 @@
       .l {
         background-color: rgb(72, 50, 50);
       }
+      .b{
+            visibility: hidden;
+            z-index:0;
+            background-color: aqua;
+            width: 150px;
+            border-radius: 100px;
+        }
+        .h{
+            position: relative;
+            border-bottom: 1px ;
+        }
+        
+          .h:hover .b{
+            z-index: 1;
+            visibility: visible;
+          }
     </style>
   </head>
   <body>
+    <div class="h">
+      <label for="sea">search:</label><br>
+      <input type="search" name="aa" id="sea">
+      <div class="b">please fill this form</div>
+  </div>
     <div class="r">
       <table>
         <tr class="h">
